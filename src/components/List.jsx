@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/list.css";
 import {
   Typography,
   Grid,
@@ -44,7 +45,8 @@ function List() {
         {data.map((element) => {
           return (
             <Card
-              sx={{ width: 250, margin: "0.5rem", backgroundColor: "#eee" }}
+              className="card-sensitive"
+              sx={{ width: 200, margin: "0.5rem" }}
             >
               <CardContent>
                 <Typography
